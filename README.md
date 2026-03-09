@@ -61,6 +61,8 @@ one-step-ahead forecast
 
 The final stock price prediction is obtained by summing forecasts across all IMFs.
 
+![equation](images/equation.png)
+
 ---
 
 ## 3. Concrete Dropout for Uncertainty Estimation
