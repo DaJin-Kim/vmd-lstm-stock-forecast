@@ -23,8 +23,6 @@ The predictive path focuses on forecasting stock prices and estimating model unc
 
 The approach was evaluated on the **S&P 500** and **FTSE 100** indices.
 
-:contentReference[oaicite:0]{index=0}
-
 ---
 
 # Method
@@ -42,8 +40,6 @@ Benefits:
 - reduces cross-frequency interference  
 - stabilizes learning for neural networks  
 - improves signal-to-noise ratio  
-
-:contentReference[oaicite:1]{index=1}
 
 ---
 
@@ -64,12 +60,6 @@ one-step-ahead forecast
 
 
 The final stock price prediction is obtained by summing forecasts across all IMFs.
-
-\[
-\hat{P}(t) = \sum_{k=1}^{K} \hat{u}_k(t)
-\]
-
-:contentReference[oaicite:2]{index=2}
 
 ---
 
