@@ -58,6 +58,7 @@ Prediction:
 
 one-step-ahead forecast
 
+![lstm](images/lstm_cell.png)
 
 The final stock price prediction is obtained by summing forecasts across all IMFs.
 
@@ -76,35 +77,13 @@ During inference:
 
 This produces **prediction intervals** around the forecast.
 
-:contentReference[oaicite:3]{index=3}
-
 ---
 
 # Model Architecture
 
-Pipeline:
+Framework:
 
-
-Stock price series
-│
-▼
-VMD
-│
-▼
-Multiple IMFs
-│
-▼
-Independent LSTM models
-│
-▼
-Forecast for each IMF
-│
-▼
-Recomposition (sum)
-│
-▼
-Final price prediction + uncertainty interval
-
+![model_framework](images/model_framework.png)
 
 ---
 
@@ -127,9 +106,6 @@ Data split:
 Train: 2013–2023
 Test: 2024
 
-
-:contentReference[oaicite:4]{index=4}
-
 ---
 
 # Results
@@ -146,28 +122,10 @@ Evaluation metric:
 RMSE
 
 
+
 The proposed model achieved the lowest prediction error and more stable forecasts across different market regimes.
 
-:contentReference[oaicite:5]{index=5}
-
----
-
-# Repository Structure
-
-
-vmd-lstm-stock-forecast
-│
-├ model
-│ ├ vmd.py
-│ ├ lstm_model.py
-│
-├ train.py
-├ predict.py
-├ dataset
-│
-├ results
-│ ├ prediction_plot.png
-│ └ rmse_table.png
+![prediction_result](images/prediction_result.png)
 
 
 ---
